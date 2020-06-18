@@ -1,0 +1,116 @@
+.task-icon {
+  padding: 0 14px;
+}
+.task-spacer {
+  flex: 1 1 auto;
+}
+.sec-toolbar-hgt {
+  height: 95px;
+  background-color: #192D3E;
+}
+.task-card {
+  max-width: 320px;
+  background-color: #F2F2F2;
+}
+.task-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.margin-20px{
+    margin: 20px;
+}
+.design-txt{
+    font-size: 16px;
+    font-weight: 500;
+}
+.margin-bottom-16{
+    margin-bottom: 16px;
+}
+.width-100{
+    width:100%;
+}
+.background-white{
+    background-color: #fff;
+}
+.pdg-10px{
+    padding:10px;
+}
+.mgn-btm-5px{
+    margin-bottom:10px;
+}
+.justify-space-btwn{
+    display: flex;
+    justify-content: space-between;
+}
+.MuiTypography-body1 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.dots-orange{
+    height: 8px;
+    display: inline-block;
+    background: #FF9800;
+    width: 35px;
+    border-radius: 5px;
+}
+.dots-red {
+    height: 8px;
+    display: inline-block;
+    background: #FF5722;
+    width: 35px;
+    border-radius: 5px;
+}
+
+.cust-red-btn{
+    --bg-opacity: 1;
+    background-color: rgba(244,67,54,var(--bg-opacity));
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 4px;
+}
+.cust-grey-btn{
+    --bg-opacity: 1;
+    background-color: grey;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 4px;
+}
+.circle-img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.bottom-icons{
+    padding: 10px 0px;
+    border-top: 1px solid #dedede;
+}
+.mat-icon {
+    color: grey;
+}
+.content{
+    overflow: auto;
+    height: 400px;
+}
+.mat-icon:hover {
+    cursor: pointer;
+}
+
+.name:hover {
+    cursor: pointer;
+}
+.add{
+    padding-top: 12px;
+    display: block;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .justify-space-btwn {
+        display: block;
+    }
+
+    .task-card{
+        margin-bottom: 15px;
+    }
+  }

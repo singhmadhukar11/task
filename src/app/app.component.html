@@ -1,5 +1,371 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>Custom Toolbar</span>
-  </mat-toolbar-row>
-</mat-toolbar>
+<div>
+  <div>
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <button mat-icon-button>
+          <mat-icon>calendar_today</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>email</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>contacts</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>library_add_check</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon style="color: #ffb300;">star_rate</mat-icon>
+        </button>
+        <span class="task-spacer"></span>
+
+        <div class="design-txt"><span [matMenuTriggerFor]="menua">
+          <span class="name">Jhon Doe</span>
+        </span>
+        <mat-menu #menua="matMenu">
+          <button mat-menu-item>Login</button>
+          <button mat-menu-item>Registration</button>
+        </mat-menu>
+      </div>
+        <mat-icon class="task-icon" aria-hidden="false">search</mat-icon>
+        <div class="design-txt"><span [matMenuTriggerFor]="menus">
+          <span class="name">EN</span>
+        </span>
+        <mat-menu #menus="matMenu">
+          <button mat-menu-item>English</button>
+          <button mat-menu-item>Turkish</button>
+          <button mat-menu-item>Arabic</button>
+        </mat-menu>
+      </div>
+        <mat-icon class="task-icon" aria-hidden="false">list</mat-icon>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+
+  <div>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row class="sec-toolbar-hgt">
+        <button mat-raised-button color="primary" style="background-color: #33c2f8;color: #000;">Boards</button>
+        <span class="task-spacer"></span>
+        <mat-icon class="task-icon" aria-hidden="false" style="color: #fff;
+        font-size: 30px;">settings_applications</mat-icon>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+
+  <div class="margin-20px justify-space-btwn">
+    <mat-card class="task-card">
+      <div class="margin-bottom-16 justify-space-btwn">
+        <div class="design-txt">Design</div>
+
+        <div class="design-txt"><span [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+          </span>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Remove List</button>
+            <button mat-menu-item>Rename List</button>
+          </mat-menu>
+        </div>
+      </div>
+      <div class="content">
+        <mat-card-content>
+          <div class="background-white">
+
+            <img class="width-100" src="http://react-material.fusetheme.com/assets/images/scrumboard/mail.jpg"
+              alt="Photo of a Shiba Inu">
+            <div class="pdg-10px">
+              <div class="mgn-btm-5px">
+                <span class="dots-orange"></span>&nbsp;&nbsp; <span class="dots-red"></span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="MuiTypography-body1">Change background color</span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="cust-red-btn">Aug 29th 17</span> &nbsp;&nbsp;
+                <span class="cust-grey-btn">2/7</span>
+              </div>
+
+              <div>
+                <img class="circle-img" src="http://react-material.fusetheme.com/assets/images/scrumboard/mail.jpg"
+                  alt="Photo of a Shiba Inu">
+              </div>
+            </div>
+            <div class="justify-space-btwn bottom-icons">
+              <mat-icon class="task-icon" aria-hidden="false">remove_red_eye</mat-icon>
+              <span>
+                <mat-icon class="task-icon" aria-hidden="false">attachment</mat-icon>
+              </span>
+            </div>
+          </div>
+        </mat-card-content>
+
+        <mat-card-content>
+          <div class="background-white">
+            <div class="pdg-10px">
+              <div class="mgn-btm-5px">
+                <span class="dots-orange"></span>&nbsp;&nbsp; <span class="dots-red"></span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="MuiTypography-body1">Change background color</span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="cust-red-btn">Aug 29th 17</span> &nbsp;&nbsp;
+                <span class="cust-grey-btn">2/7</span>
+              </div>
+
+              <div>
+                <img class="circle-img" src="http://react-material.fusetheme.com/assets/images/scrumboard/mail.jpg"
+                  alt="Photo of a Shiba Inu">
+              </div>
+            </div>
+            <div class="justify-space-btwn bottom-icons">
+              <mat-icon class="task-icon" aria-hidden="false">remove_red_eye</mat-icon>
+              <span>
+                <mat-icon class="task-icon" aria-hidden="false">attachment</mat-icon>
+              </span>
+            </div>
+          </div>
+        </mat-card-content>
+      </div>
+      <div>
+        <span class="add">+ ADD CARDS</span>
+      </div>
+    </mat-card>
+
+    <mat-card class="task-card">
+      <div class="margin-bottom-16 justify-space-btwn">
+        <div class="design-txt">Development</div>
+
+        <div class="design-txt"><span [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+          </span>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Remove List</button>
+            <button mat-menu-item>Rename List</button>
+          </mat-menu>
+        </div>
+      </div>
+      <div class="content">
+       
+        <mat-card-content>
+          <div class="background-white">
+            <div class="pdg-10px">
+              <div class="mgn-btm-5px">
+                <span class="dots-orange"></span>&nbsp;&nbsp; <span class="dots-red"></span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="MuiTypography-body1">Change background color</span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="cust-red-btn">Aug 29th 17</span> &nbsp;&nbsp;
+                <span class="cust-grey-btn">2/7</span>
+              </div>
+
+              <div>
+                <img class="circle-img" src="http://react-material.fusetheme.com/assets/images/scrumboard/mail.jpg"
+                  alt="Photo of a Shiba Inu">
+              </div>
+            </div>
+            <div class="justify-space-btwn bottom-icons">
+              <mat-icon class="task-icon" aria-hidden="false">remove_red_eye</mat-icon>
+              <span>
+                <mat-icon class="task-icon" aria-hidden="false">attachment</mat-icon>
+              </span>
+            </div>
+          </div>
+        </mat-card-content>
+
+        <mat-card-content>
+          <div class="background-white">
+
+            <img class="width-100" src="http://react-material.fusetheme.com/assets/images/scrumboard/mail.jpg"
+              alt="Photo of a Shiba Inu">
+            <div class="pdg-10px">
+              <div class="mgn-btm-5px">
+                <span class="dots-orange"></span>&nbsp;&nbsp; <span class="dots-red"></span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="MuiTypography-body1">Change background color</span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="cust-red-btn">Aug 29th 17</span> &nbsp;&nbsp;
+                <span class="cust-grey-btn">2/7</span>
+              </div>
+
+              <div>
+                <img class="circle-img" src="http://react-material.fusetheme.com/assets/images/scrumboard/mail.jpg"
+                  alt="Photo of a Shiba Inu">
+              </div>
+            </div>
+            <div class="justify-space-btwn bottom-icons">
+              <mat-icon class="task-icon" aria-hidden="false">remove_red_eye</mat-icon>
+              <span>
+                <mat-icon class="task-icon" aria-hidden="false">attachment</mat-icon>
+              </span>
+            </div>
+          </div>
+        </mat-card-content>
+
+      </div>
+      <div>
+        <span class="add">+ ADD CARDS</span>
+      </div>
+    </mat-card>
+
+    <mat-card class="task-card">
+      <div class="margin-bottom-16 justify-space-btwn">
+        <div class="design-txt">Upcoming Feature</div>
+
+        <div class="design-txt"><span [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+          </span>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Remove List</button>
+            <button mat-menu-item>Rename List</button>
+          </mat-menu>
+        </div>
+      </div>
+      <div class="content">
+        <mat-card-content>
+          <div class="background-white">
+
+            <img class="width-100" src="http://react-material.fusetheme.com/assets/images/scrumboard/mail.jpg"
+              alt="Photo of a Shiba Inu">
+            <div class="pdg-10px">
+              <div class="mgn-btm-5px">
+                <span class="dots-orange"></span>&nbsp;&nbsp; <span class="dots-red"></span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="MuiTypography-body1">Change background color</span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="cust-red-btn">Aug 29th 17</span> &nbsp;&nbsp;
+                <span class="cust-grey-btn">2/7</span>
+              </div>
+
+              <div>
+                <img class="circle-img" src="http://react-material.fusetheme.com/assets/images/scrumboard/mail.jpg"
+                  alt="Photo of a Shiba Inu">
+              </div>
+            </div>
+            <div class="justify-space-btwn bottom-icons">
+              <mat-icon class="task-icon" aria-hidden="false">remove_red_eye</mat-icon>
+              <span>
+                <mat-icon class="task-icon" aria-hidden="false">attachment</mat-icon>
+              </span>
+            </div>
+          </div>
+        </mat-card-content>
+
+        <mat-card-content>
+          <div class="background-white">
+            <div class="pdg-10px">
+              <div class="mgn-btm-5px">
+                <span class="dots-orange"></span>&nbsp;&nbsp; <span class="dots-red"></span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="MuiTypography-body1">Change background color</span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="cust-red-btn">Aug 29th 17</span> &nbsp;&nbsp;
+                <span class="cust-grey-btn">2/7</span>
+              </div>
+
+              <div>
+                <img class="circle-img" src="http://react-material.fusetheme.com/assets/images/scrumboard/mail.jpg"
+                  alt="Photo of a Shiba Inu">
+              </div>
+            </div>
+            <div class="justify-space-btwn bottom-icons">
+              <mat-icon class="task-icon" aria-hidden="false">remove_red_eye</mat-icon>
+              <span>
+                <mat-icon class="task-icon" aria-hidden="false">attachment</mat-icon>
+              </span>
+            </div>
+          </div>
+        </mat-card-content>
+      </div>
+      <div>
+        <span class="add">+ ADD CARDS</span>
+      </div>
+    </mat-card>
+
+    <mat-card class="task-card">
+      <div class="margin-bottom-16 justify-space-btwn">
+        <div class="design-txt">Known Bugs</div>
+
+        <div class="design-txt"><span [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+          </span>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Remove List</button>
+            <button mat-menu-item>Rename List</button>
+          </mat-menu>
+        </div>
+      </div>
+      <div class="content">
+        <mat-card-content>
+          <div class="background-white">
+
+            <img class="width-100" src="http://react-material.fusetheme.com/assets/images/scrumboard/mail.jpg"
+              alt="Photo of a Shiba Inu">
+            <div class="pdg-10px">
+              <div class="mgn-btm-5px">
+                <span class="dots-orange"></span>&nbsp;&nbsp; <span class="dots-red"></span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="MuiTypography-body1">Change background color</span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="cust-red-btn">Aug 29th 17</span> &nbsp;&nbsp;
+                <span class="cust-grey-btn">2/7</span>
+              </div>
+
+              <div>
+                <img class="circle-img" src="http://react-material.fusetheme.com/assets/images/scrumboard/mail.jpg"
+                  alt="Photo of a Shiba Inu">
+              </div>
+            </div>
+            <div class="justify-space-btwn bottom-icons">
+              <mat-icon class="task-icon" aria-hidden="false">remove_red_eye</mat-icon>
+              <span>
+                <mat-icon class="task-icon" aria-hidden="false">attachment</mat-icon>
+              </span>
+            </div>
+          </div>
+        </mat-card-content>
+
+        <mat-card-content>
+          <div class="background-white">
+            <div class="pdg-10px">
+              <div class="mgn-btm-5px">
+                <span class="dots-orange"></span>&nbsp;&nbsp; <span class="dots-red"></span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="MuiTypography-body1">Change background color</span>
+              </div>
+              <div class="mgn-btm-5px">
+                <span class="cust-red-btn">Aug 29th 17</span> &nbsp;&nbsp;
+                <span class="cust-grey-btn">2/7</span>
+              </div>
+
+              <div>
+                <img class="circle-img" src="http://react-material.fusetheme.com/assets/images/scrumboard/mail.jpg"
+                  alt="Photo of a Shiba Inu">
+              </div>
+            </div>
+            <div class="justify-space-btwn bottom-icons">
+              <mat-icon class="task-icon" aria-hidden="false">remove_red_eye</mat-icon>
+              <span>
+                <mat-icon class="task-icon" aria-hidden="false">attachment</mat-icon>
+              </span>
+            </div>
+          </div>
+        </mat-card-content>
+      </div>
+      <div>
+        <span class="add">+ ADD CARDS</span>
+      </div>
+    </mat-card>
+  </div>
+</div>
